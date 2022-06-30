@@ -1,10 +1,16 @@
 <template>
-  <div>Congrat! You're logged in</div>
+  <div>
+    Congrat! You're logged in
+    <NavMenu />
+  </div>
 </template>
 
 <script>
+import NavMenu from "./NavMenu.vue";
+
 export default {
   name: "HomePage",
+  components: { NavMenu },
 };
 </script>
 
