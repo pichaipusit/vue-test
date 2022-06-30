@@ -24,7 +24,7 @@
         </el-submenu>
       </el-submenu>
       <el-menu-item index="3" disabled>Info</el-menu-item>
-      <el-menu-item index="4">Log out</el-menu-item>
+      <el-menu-item index="4" @click="logout">Log out</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -42,6 +42,10 @@ export default {
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
+    },
+
+    logout() {
+      this.$router.push("/");
     },
   },
 };
