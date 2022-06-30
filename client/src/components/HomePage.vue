@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>Congrat! You're logged in</div>
 </template>
 
 <script>

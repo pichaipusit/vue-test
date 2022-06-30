@@ -24,6 +24,12 @@
       >
         <el-input v-model="dynamicValidateForm.email"></el-input>
       </el-form-item>
+
+      <el-form-item label="Password" prop="pass">
+        <el-input type="text" v-model="password" autocomplete="off"></el-input>
+      </el-form-item>
+
+      <el-button type="primary" @click="submitSignin" round>Sign in</el-button>
     </el-form>
   </div>
 </template>
@@ -43,7 +49,14 @@ export default {
         ],
         email: "",
       },
+      password: "",
     };
+  },
+
+  methods: {
+    submitSignin() {
+      this.$router.push("/home");
+    },
   },
 };
 </script>
