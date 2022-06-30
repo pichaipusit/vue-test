@@ -29,7 +29,14 @@
         <el-input type="text" v-model="password" autocomplete="off"></el-input>
       </el-form-item>
 
-      <el-button type="primary" @click="submitSignin" round>Sign in</el-button>
+      <div class="sign-btn">
+        <div class="signin-btn">
+          <el-button type="primary" @click="submitSignin" round
+            >Sign in</el-button
+          >
+        </div>
+        <router-link to="/signup">Sign up</router-link>
+      </div>
     </el-form>
   </div>
 </template>
@@ -61,4 +68,13 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.sign-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin-btn {
+  margin-right: 20px;
+}
+</style>
