@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use(userRouter);
+app.use("/signup", userRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
