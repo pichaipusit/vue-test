@@ -10,13 +10,13 @@ export default new Vuex.Store({
     firstName: "",
     lastName: "",
   },
-  getters: {
+  getters: {},
+  mutations: {
     setEmail: (state, email) => (state.email = email),
     setPassword: (state, password) => (state.password = password),
     setFirstName: (state, firstName) => (state.firstName = firstName),
     setLastName: (state, lastName) => (state.lastName = lastName),
   },
-  mutations: {},
   actions: {},
   modules: {},
 });
