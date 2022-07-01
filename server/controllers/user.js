@@ -1,3 +1,3 @@
-export const signup = (req, res) => {
-  res.send("Sign up successfully");
+export const getUser = (req, res) => {
+  res.send("Here's user data!");
 };

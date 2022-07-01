@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import userRouter from "./routes/user.js";
+import signupRouter from "./routes/signup.js";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -15,7 +16,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/signup", userRouter);
+app.use("/signup", signupRouter);
+app.use("/home", userRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
