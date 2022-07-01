@@ -20,7 +20,7 @@ export default new Vuex.Store({
   },
   actions: {
     async fetchUserData({ commit }) {
-      const response = await axios.get("");
+      const response = await axios.get("http://localhost:3000/home");
     },
   },
   modules: {},
