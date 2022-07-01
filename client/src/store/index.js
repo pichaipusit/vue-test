@@ -1,3 +1,4 @@
+import axios from "axios";
 import Vue from "vue";
 import Vuex from "vuex";
 
@@ -17,6 +18,10 @@ export default new Vuex.Store({
     setFirstName: (state, firstName) => (state.firstName = firstName),
     setLastName: (state, lastName) => (state.lastName = lastName),
   },
-  actions: {},
+  actions: {
+    async fetchUserData({ commit }) {
+      const response = await axios.get("");
+    },
+  },
   modules: {},
 });
