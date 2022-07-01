@@ -1,12 +1,12 @@
-const express = require("express");
-const cors = require("cors");
-const userRouter = require("./routes/user.js");
+import express from "express";
+import cors from "cors";
+import userRouter from "./routes/user.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 
 const port = 3000;
-
-require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
